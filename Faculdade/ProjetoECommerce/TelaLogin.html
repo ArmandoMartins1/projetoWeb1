@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <center>
+        <table id="tabelaTelaPrincipal" border="3" width="1000">
+            <tr>
+                    <!-- Cabeçalho -->
+                   <td colspan="4">
+                       <center><h1 id="cabecalho">Armando um Som</h1></center>
+    
+                   </td>
+                
+            </tr>
+            <!-- Navegação -->
+            <tr width="">
+                <td><center>
+                    <a id="setaVoltar" href="TelaLogin.html"><img src="/ProjetoECommerce/imagens/seta-esquerda.png"  ></a>
+                </center>
+                </td>
+                    <td>
+                        <center>
+                        <h2 id="idCabecalho">
+                        <a href="">Armando um Som</a> &nbsp &nbsp
+                        <a href="">Sobre</a> &nbsp &nbsp
+                        <a href="TelaLogin.html">Sair</a>
+                        </h2>
+                        </center>
+                    </td>
+                    
+                <td>
+                    <center>
+                        <a id="carrinhoCompras" href=""><img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" alt=""></a>
+                        </center>
+                    
+                </td>
+    
+                <td>
+                    <center>
+                        <a id="setaProsseguir" href=""><img src="/ProjetoECommerce/imagens/seta-direita.png"  ></a>
+                        </center>
+                </td>
+            </tr> 
+    </table>
+    </center>
+
+    <center>
+    <h1>Tela de Login</h1>
+<table border="3" height="200" width="300">
+    <tr> 
+        
+        <!-- usuario -->
+        <td><b>Usuário:</b><input type="text" id="usuarioLogin"> <br>
+            <br>
+
+            <!-- Senha -->
+        <label for=""><b>Senha .:</b></label> <input type="password" id="usuarioSenha"> <br>
+        <br>
+        <!-- link novo -->
+        <center><a href="NovoUsuario.html" id="linkNovoUsuario" >Novo</a> &nbsp &nbsp
+
+        <!-- link Recuperar Senha -->
+        <a href="RecuperarSenha.html" id="linkRecuperarSenha">Esqueceu a senha?</a> <br>
+        <center><button type="submit" id="butaoEntradaLogin" onclick="abrirTelaPrincipal()">Entrar</button></center>
+        </td>
+    
+    
+    </tr>
+</table>
+
+</center>
+
+<script>
+    function abrirTelaPrincipal(){
+        window.location.href = "TelaPrincipal.html"
+    }
+</script>
+
+</body>
+</html>

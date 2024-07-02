@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Cadastro</title>
+</head>
+<body>
+
+    <center>
+        <table id="tabelaTelaPrincipal" border="3" width="1000">
+            <tr>
+                    <!-- Cabeçalho -->
+                   <td colspan="4">
+                       <center><h1 id="cabecalho">Armando um Som</h1></center>
+    
+                   </td>
+                
+            </tr>
+            <!-- Navegação -->
+            <tr width="">
+                <td><center>
+                    <a id="setaVoltar" href="TelaLogin.html"><img src="/ProjetoECommerce/imagens/seta-esquerda.png"  ></a>
+                </center>
+                </td>
+                    <td>
+                        <center>
+                        <h2 id="idCabecalho">
+                        <a href="">Armando um Som</a> &nbsp &nbsp
+                        <a href="">Sobre</a> &nbsp &nbsp
+                        <a href="TelaLogin.html">Sair</a>
+                        </h2>
+                        </center>
+                    </td>
+                    
+                <td>
+                    <center>
+                        <a id="carrinhoCompras" href=""><img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" alt=""></a>
+                        </center>
+                    
+                </td>
+    
+                <td>
+                    <center>
+                        <a id="setaProsseguir" href=""><img src="/ProjetoECommerce/imagens/seta-direita.png"  ></a>
+                        </center>
+                </td>
+            </tr> 
+    </table>
+    </center>
+
+    <form action="get" id="formularioCadastro">
+        <fieldset>
+            <legend> <h1>Cadastro</h1></legend>
+        <!-- Nome -->
+        <label for="" id="nomeCadastro">Nome:
+        <input type="text" name="nome" id="inputNomeCadastro"></label> <br> <br>
+        
+        <!-- Sexo -->
+        <label for="" id="sexoCadastro">Sexo:</label> <br>
+        <input type="radio" id="sexoH" name="sexoHM" value="sexoH" ><label for="">Homem </label>
+        <input type="radio" id="sexoM" name="sexoHM" value="sexoM" ><label for="">Mulher </label> <br>
+        
+        <br>
+        <!-- OBS -->
+        <label for="" id="obsCadastro">Observações:  <br>
+        <textarea name="observacoes" id="obs" rows="10" cols="50"></textarea> </label>
+        <br> <br>
+
+        <!-- EMAIL -->
+        <label for="" id="idEmailCadastro">E-mail:
+        <input type="email" name="email" id="emailCadastro"> </label>
+        <br> <br>
+
+        <!-- SENHA -->
+        <label for="" id="idSenhaCadastro">Senha: 
+        <input type="password" name="" id="senhaCadastro"> </label> <br>
+        <label for="" id="idConfirmarSenhaCadastro">Confirmar Senha:
+        <input type="password" name="" id="confirmarSenhaCadastro"> </label>
+            <br>
+            <br>
+        <!-- BUTÕES -->
+        <center>
+            <button id="voltarTelaLogin" type="submit" onclick="voltar2()">Cadastrar</button>
+            <button type="reset" id="butaoResetar">Limpar</button>
+        </center>
+        
+        <script>
+            //document.getElementById("voltarTelaLogin").addEventListener("click",
+                function voltar2(){
+                    window.location.href='TelaLogin.html'
+                    alert("Cadastro Concluído!")                    
+                }
+           // );
+        </script>
+    </form>
+</fieldset>
+</body>
+</html>

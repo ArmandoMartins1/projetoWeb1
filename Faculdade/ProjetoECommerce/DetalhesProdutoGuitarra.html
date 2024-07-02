@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra</title>
+</head>
+<body>
+    <table border="3" width="1000">
+        <tr>
+                <!-- Cabeçalho -->
+               <td colspan="4">
+                   <center><h1>Armando um Som</h1></center>
+
+               </td>
+            
+        </tr>
+        <!-- Navegação -->
+        <tr width="">
+            <td><center>
+                <a href="CarrinhoDeCompras.html"><img src="/ProjetoECommerce/imagens/seta-esquerda.png"  ></a>
+            </center>
+            </td>
+                <td>
+                    <center>
+                    <h2>
+                    <a href="TelaPrincipal.html">Armando um Som</a> &nbsp &nbsp
+                    <a href="">Sobre</a> &nbsp &nbsp
+                    <a href="TelaLogin.html">Sair</a>
+                    </h2>
+                    </center>
+                </td>
+                
+            <td>
+                <center>
+                    <a href=""><img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" alt=""></a>
+                    </center>
+                
+            </td>
+
+            <td>
+                <center>
+                    <a href=""><img src="/ProjetoECommerce/imagens/seta-direita.png"  ></a>
+                    </center>
+            </td>
+        </tr> 
+    </table>
+    
+    <h1>Detalhes sobre a Guitarra:</h1>
+    <p>
+        <h2>Guitarra elétrica TAGIMA - TG 500 BK DF BK, Black Dark Fingerboard Mint Green <br>
+            R$1.805,00 
+        </h2>
+
+    </p>
+    
+    <img src="/ProjetoECommerce/imagens/guitarra.jpg" width="350" alt=""> 
+    <img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" onclick="comprar()" alt="">
+    <input type="button" value="comprar" onclick="comprar()">
+    <ul> 
+        <b>Sobre este item</b>
+        <li>Guitarra elétrica tagima estilo strat</li>
+        <li>Captadores 3 single coils cerâmicos</li>
+        <li>6 cordas</li>
+    </ul>
+
+    <iframe width="800" height="590" src="https://www.youtube.com/embed/Zt7kZCNcdEE" title="Review Guitarra Tagima Tg-510 com Márcio Sanches" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<p>
+    <a href="https://www.amazon.com.br/Guitarra-el%C3%A9trica-TAGIMA-Black-Fingerboard/dp/B08JM9GBT5" target="_blank">Mais Detalhes...</a>
+</p>
+    
+<script>
+        
+    function comprar(){
+        var result = window.prompt("Você vai comprar quantas Guitarras ?")
+        if(result != null){
+            alert("Certo, então você vai pagar: R$"+ result * 1085)
+            alert("Compra realizada com sucesso!")
+
+        }else{
+            alert("Erro na compra!")
+            }
+    }
+</script>
+
+</body>
+</html>

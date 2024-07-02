@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecuperarSenha</title>
+</head>
+
+<body>
+    <center>
+        <table id="tabelaTelaPrincipal" border="3" width="1000">
+            <tr>
+                    <!-- Cabeçalho -->
+                   <td colspan="4">
+                       <center><h1 id="cabecalho">Armando um Som</h1></center>
+    
+                   </td>
+                
+            </tr>
+            <!-- Navegação -->
+            <tr width="">
+                <td><center>
+                    <a id="setaVoltar" href="TelaLogin.html"><img src="/ProjetoECommerce/imagens/seta-esquerda.png"  ></a>
+                </center>
+                </td>
+                    <td>
+                        <center>
+                        <h2 id="idCabecalho">
+                        <a href="TelaPrincipal.html">Armando um Som</a> &nbsp &nbsp
+                        <a href="">Sobre</a> &nbsp &nbsp
+                        <a href="TelaLogin.html">Sair</a>
+                        </h2>
+                        </center>
+                    </td>
+                    
+                <td>
+                    <center>
+                        <a id="carrinhoCompras" href=""><img src="/ProjetoECommerce/imagens/carrinho_de_Compras.png" width="32" alt=""></a>
+                        </center>
+                    
+                </td>
+    
+                <td>
+                    <center>
+                        <a id="setaProsseguir" href=""><img src="/ProjetoECommerce/imagens/seta-direita.png"  ></a>
+                        </center>
+                </td>
+            </tr> 
+    </table>
+    </center>
+
+    <br>
+    <center>
+    <table border="3" width="300" heigth="400">
+        
+        <tr>
+            
+            <td>
+                <h3>Recuperar Senha</h3>
+                <center><b>E-mail:</b> <input type="email" id="emailRecuperarSenha"></center> <br>
+                <center><button id="butaoRecuperarSenha" onclick="alerta()">Enviar</button></center>
+            <p></p>
+            </td>
+                
+        </tr>
+    </table>
+</center>
+
+    <script>
+        var email = document.getElementById("emailRecuperarSenha");
+        function alerta(){
+                alert("Senha enviada para o e-mail informado.")
+                window.location.href="TelaLogin.html"
+            }
+                
+        
+    </script>
+</body>
+</html>
